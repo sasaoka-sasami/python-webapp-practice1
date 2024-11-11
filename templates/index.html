@@ -7,8 +7,12 @@
 </head>
 <body>
 
-    <h1>sub2ルーティング用ページです</h1>
+    <h1>{{name}}ルーティング用ページです</h1>
     <p>いらっしゃ～い</p>
+    {% for test_message in list %}
+        <li>{{test_message}}</li>
+        <br>
+    {% endfor%}
 
 </body>
 </html>
