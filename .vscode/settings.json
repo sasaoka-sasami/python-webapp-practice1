@@ -1,0 +1,8 @@
+// Folders in your home directory to look into for virtual environments.
+{
+    "python.venvFolders": [
+        "envs",
+        ".pyenv",
+        ".direnv"
+    ]
+}
