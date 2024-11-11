@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -12,7 +13,7 @@ def hello_sub1(name):
 
 @app.route("/sub2")
 def hello_sub2():
-    return "<p>sub2ページです</p>"
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run()
