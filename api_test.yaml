@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: Practice API
+  version: 1.0.0
+  description: swagger形式でのAPI仕様書作成練習
+servers:
+  - url: http://127.0.0.1:5000
+paths:
+  /:
+    get:
+      summary: テストAPI
+      parameters:
+      - name: data
+        in: query
+        schema:
+          type: string
+
+      responses:
+        "201":
+          description: success operation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: string
